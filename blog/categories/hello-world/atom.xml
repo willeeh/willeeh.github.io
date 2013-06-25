@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Willeeh's Blog]]></title>
-  <link href="http://willeeh.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Hello World | Willeeh's Blog]]></title>
+  <link href="http://willeeh.github.io/blog/categories/hello-world/atom.xml" rel="self"/>
   <link href="http://willeeh.github.io/"/>
   <updated>2013-06-25T23:05:21+02:00</updated>
   <id>http://willeeh.github.io/</id>
