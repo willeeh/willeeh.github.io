@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://willeeh.github.io/sitemap.xml 
