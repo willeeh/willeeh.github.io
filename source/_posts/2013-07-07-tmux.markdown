@@ -1,0 +1,60 @@
+---
+layout: post
+title: "tmux - terminal multiplexer"
+date: 2013-07-07 23:29
+comments: true
+categories: [tutorial]
+---
+
+I've found a great tool that belongs to a context I've not been interested until now. Lately me and my coworkers team in [Malcom](http://www.mymalcom.com) have been involved in dev-ops work. Connecting to many servers at the same time to look into logs, editing scripts, configurations, etc. is a everyday work. I used to launch terminals and handling them separately. Not anymore.
+
+Here [Tmux](http://tmux.sourceforge.net/) comes to us to give a hand. It's a terminal multiplexer letting you run various TTYs in the same terminal window. 
+
+<!-- more -->
+
+There are two main behaviours to work with it, windows and panes:
+
+* Windows behaviour lets you have various terminals in a unique terminal like tabs in a browser.
+* Pane behaviour lets you split the current window into panes.
+
+Let's go to work a little bit with it. Easy to install as usual thanks to [Homebrew](http://mxcl.github.io/homebrew/) (only if you are in a Mac). If so, type in your terminal the following:
+
+```
+brew install tmux
+```
+Now you can start up tmux. You know you are in tmux because you will see a green status bar that indicates where are you.
+
+```
+tmux
+```
+You need to know tmux uses an action binding key `Ctrl + b` which you'll need to do any action you want. Start creating a new window with `Ctrl+b c`. Now you are in a second window if you want to go back to the previous window `Ctrl+b p`. Let's play with this keybindings list:
+
+```
+Ctrl+b c Create new window
+Ctrl+b n Move to the next window
+Ctrl+b p Move to the previous window
+Ctrl+b & Kill the current window
+Ctrl+b , Rename the current window
+Ctrl+b ? List all keybindings
+```
+But tmux supports another powerful feature, the second behaviour I mentioned: panes. You can split any window to panes, vertically and horizontally. Try with `Ctrl+b %` and you split the windows vertically. If you can move through panes you can use `Ctrl+b o` to go next pane. But again play with this keybindings list:
+
+```
+Ctrl+b % Split the window vertically
+Ctrl+b : Split the window horizontally
+Ctrl+b o Goto next pane
+Ctrl+b q Show pane numbers, when the numbers show up type the key to goto that pane
+Ctrl+b { Move the current pane left
+Ctrl+b } Move the current pane right
+``` 
+
+There are a lot of keybindings for an advance use, like moving windows, resize panes, make panes into an own window, but you can see all these options in `Ctrl+b ?`. Help yourself.
+
+At last but not least tmux can detach the whole session and re-attach it again if you want to.
+
+```
+Ctrl+b d        Detach from currently attached session
+tmux attach -d  re-attach an attached session (detaching it from elsewhere)
+tmux attach     re-attach an attached session (keeping it attached elsewhere)
+```
+For sure it's not a hot technology but my ignorance about this kind of tool and how tmux does its job deserves a notable mention.
