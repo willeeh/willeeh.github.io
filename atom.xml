@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Willeeh's Blog]]></title>
+  <link href="http://willeeh.github.io/atom.xml" rel="self"/>
+  <link href="http://willeeh.github.io/"/>
+  <updated>2013-07-01T20:57:18+02:00</updated>
+  <id>http://willeeh.github.io/</id>
+  <author>
+    <name><![CDATA[Guillermo Ceballos]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Old stuff becomes something new]]></title>
+    <link href="http://willeeh.github.io/blog/2013/06/29/old-stuff-becomes-something-new/"/>
+    <updated>2013-06-29T20:51:00+02:00</updated>
+    <id>http://willeeh.github.io/blog/2013/06/29/old-stuff-becomes-something-new</id>
+    <content type="html"><![CDATA[<p>A few months ago I was working on an app to allow users to look for fast food restaurants in Spain. Actually, the app is pretty much done but I&rsquo;ve not published yet because of some minor design details. I&rsquo;m that kind of a good-eye guy who doesn&rsquo;t want to show the world the product til it&rsquo;s amazing, but I&rsquo;m becoming more <em>lean</em> lately.</p>
+
+<p>I made a web scraper to get fast food restaurants info (as location, name, image,…) and then put into a database (I used MongoHQ btw). So, this weekend I uploaded the <a href="https://github.com/willeeh/food-franchises-geojson">code</a> to GitHub.</p>
+
+<p>You can think: it&rsquo;s not a big deal anyway, so why &mdash;this boring&mdash; guy is talking about this?</p>
+
+<p>Here we go… GitHub has launched a <a href="https://github.com/blog/1528-there-s-a-map-for-that">good feature</a> to visualize geographic data, using <a href="http://leafletjs.com/">Leaflet.js</a>, <a href="http://www.mapbox.com/">MapBox</a> and <a href="http://www.openstreetmap.org/">OpenStreetMap</a>. Ten days after this announcement they&rsquo;ve improved this feature letting <a href="https://github.com/blog/1541-geojson-rendering-improvements">large data sets to be grouped automatically</a>. Wonderful work!</p>
+
+<p>That day I had no doubts I would use my code to generate GeoJSON to visualize fast food restaurants in Spain.</p>
+
+<p>What do you think about this result?</p>
+
+<script src="https://embed.github.com/view/geojson/willeeh/food-franchises-geojson/master/ALL_IN_ONE.geojson?height=420&width=700"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Eh... What's up, doc?]]></title>
+    <link href="http://willeeh.github.io/blog/2013/06/25/eh-dot-dot-dot-whats-up/"/>
+    <updated>2013-06-25T22:18:00+02:00</updated>
+    <id>http://willeeh.github.io/blog/2013/06/25/eh-dot-dot-dot-whats-up</id>
+    <content type="html"><![CDATA[<h2>Here I am. </h2>
+
+<p>I&rsquo;ve proposed to myself blog something interesting every week at least. And you got a metapost here.</p>
+
+<p>After seeing  <a href="http://nlopez.io/">mrmans0n</a> doing some great stuff with Octopress (blogging framework I&rsquo;m using in this blog), I wanted to give it a try and see how well was.</p>
+
+<p>So good so far. Its documentation is pretty well, its simplicity is very sexy and deploying it on Github pages straight forward. But I miss some useful tools like remove posts not published yet. If I get used to work with Octopress, I will contribute this kind of tools.</p>
+
+<p>In coming posts I promise to go deep into great stuff I&rsquo;m working on.</p>
+]]></content>
+  </entry>
+  
+</feed>
