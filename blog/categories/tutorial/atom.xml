@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tutorial | Willeeh's Blog]]></title>
+  <link href="http://willeeh.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
+  <link href="http://willeeh.github.io/"/>
+  <updated>2013-07-09T16:12:05+02:00</updated>
+  <id>http://willeeh.github.io/</id>
+  <author>
+    <name><![CDATA[Guillermo Ceballos]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[tmux - terminal multiplexer]]></title>
+    <link href="http://willeeh.github.io/blog/2013/07/07/tmux/"/>
+    <updated>2013-07-07T23:29:00+02:00</updated>
+    <id>http://willeeh.github.io/blog/2013/07/07/tmux</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve found a great tool that belongs to a context I&rsquo;ve not been interested until now. Lately me and my coworkers team in <a href="http://www.mymalcom.com">Malcom</a> have been involved in dev-ops work. Connecting to many servers at the same time to look into logs, editing scripts, configurations, etc. is a everyday work. I used to launch terminals and handling them separately. Not anymore.</p>
+
+<p>Here <a href="http://tmux.sourceforge.net/">Tmux</a> comes to us to give a hand. It&rsquo;s a terminal multiplexer letting you run various TTYs in the same terminal window.</p>
+
+<!-- more -->
+
+
+<p>There are two main behaviours to work with it, windows and panes:</p>
+
+<ul>
+<li>Windows behaviour lets you have various terminals in a unique terminal like tabs in a browser.</li>
+<li>Pane behaviour lets you split the current window into panes.</li>
+</ul>
+
+
+<p>Let&rsquo;s go to work a little bit with it. Easy to install as usual thanks to <a href="http://mxcl.github.io/homebrew/">Homebrew</a> (only if you are in a Mac). If so, type in your terminal the following:</p>
+
+<p><code>
+brew install tmux
+</code>
+Now you can start up tmux. You know you are in tmux because you will see a green status bar that indicates where are you.</p>
+
+<p><code>
+tmux
+</code>
+You need to know tmux uses an action binding key <code>Ctrl + b</code> which you&rsquo;ll need to do any action you want. Start creating a new window with <code>Ctrl+b c</code>. Now you are in a second window if you want to go back to the previous window <code>Ctrl+b p</code>. Let&rsquo;s play with this keybindings list:</p>
+
+<p><code>
+Ctrl+b c Create new window
+Ctrl+b n Move to the next window
+Ctrl+b p Move to the previous window
+Ctrl+b &amp; Kill the current window
+Ctrl+b , Rename the current window
+Ctrl+b ? List all keybindings
+</code>
+But tmux supports another powerful feature, the second behaviour I mentioned: panes. You can split any window to panes, vertically and horizontally. Try with <code>Ctrl+b %</code> and you split the windows vertically. If you can move through panes you can use <code>Ctrl+b o</code> to go next pane. But again play with this keybindings list:</p>
+
+<p><code>
+Ctrl+b % Split the window vertically
+Ctrl+b : Split the window horizontally
+Ctrl+b o Goto next pane
+Ctrl+b q Show pane numbers, when the numbers show up type the key to goto that pane
+Ctrl+b { Move the current pane left
+Ctrl+b } Move the current pane right
+</code></p>
+
+<p>There are a lot of keybindings for an advance use, like moving windows, resize panes, make panes into an own window, but you can see all these options in <code>Ctrl+b ?</code>. Help yourself.</p>
+
+<p>At last but not least tmux can detach the whole session and re-attach it again if you want to.</p>
+
+<p><code>
+Ctrl+b d        Detach from currently attached session
+tmux attach -d  re-attach an attached session (detaching it from elsewhere)
+tmux attach     re-attach an attached session (keeping it attached elsewhere)
+</code>
+For sure it&rsquo;s not a hot technology but my ignorance about this kind of tool and how tmux does its job deserves a notable mention.</p>
+]]></content>
+  </entry>
+  
+</feed>
