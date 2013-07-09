@@ -2,15 +2,11 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://willeeh.github.io/blog/2013/06/25/eh-dot-dot-dot-whats-up/</loc>
-        <lastmod>2013-06-25T23:03:42+02:00</lastmod>
+        <lastmod>2013-07-01T20:27:15+02:00</lastmod>
     </url>
     <url>
         <loc>http://willeeh.github.io/blog/2013/06/29/old-stuff-becomes-something-new/</loc>
-        <lastmod>2013-06-29T22:04:18+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://willeeh.github.io/blog/2013/07/07/tmux/</loc>
-        <lastmod>2013-07-07T23:38:23+02:00</lastmod>
+        <lastmod>2013-07-01T20:27:15+02:00</lastmod>
     </url>
     <url>
         <loc>http://willeeh.github.io/blog/2013/07/07/tmux/</loc>
@@ -18,22 +14,14 @@
     </url>
     <url>
         <loc>http://willeeh.github.io/blog/archives/</loc>
-<<<<<<< HEAD
         <lastmod>2013-07-09T16:11:27+02:00</lastmod>
     </url>
     <url>
         <loc>http://willeeh.github.io/</loc>
         <lastmod>2013-07-09T16:11:27+02:00</lastmod>
-=======
-        <lastmod>2013-07-07T23:38:23+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://willeeh.github.io/</loc>
-        <lastmod>2013-07-07T23:38:23+02:00</lastmod>
->>>>>>> aa415b94a92cf81515a35b79644f6a729fb0684e
     </url>
     <url>
         <loc>http://willeeh.github.io/robots.txt</loc>
-        <lastmod>2013-06-25T21:44:55+02:00</lastmod>
+        <lastmod>2013-07-01T20:27:15+02:00</lastmod>
     </url>
 </urlset>
